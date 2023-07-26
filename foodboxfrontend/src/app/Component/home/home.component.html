@@ -1,0 +1,132 @@
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-6 ">
+            <h3>Welcome to FoodBox!!</h3>'
+        <p>We now offer online shopping for meals of different cuisines at offerdable prices on our website. </p>
+            <h4><br>what are looking for?</h4><br>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><img src="assets/Images/search-icon.png" alt=""></span>
+                </div>
+                <input type="text" class="form-control" placeholder="Search foodItems and more..."
+                    [(ngModel)]="name" (keydown.enter)="onSearch(name)">
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h4 class="ml-4 pl-5">Browse foodItems,Enjoy Whatever your tummy desires!</h4>
+            <br>
+            <h6 class="ml-4 pl-5">By cuisine</h6>
+        </div>
+    </div>
+</div>
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col mb-5">
+            <div id="product" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card-deck col-11 mx-auto">
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/american.avif" alt="american.avif"
+                                    style="width:100%; height:130px;">
+                                <div class="card-body text-center mt-1">
+                                    <a routerLink="/show/product/class/{{medicine[0]}}">American</a>
+                                </div>
+                            </div>
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/indian.avif" alt="indian.avif"
+                                    style="width:100%; height:130px;">
+
+                                <div class="card-body text-center mt-1">
+                                    <a routerLink="/show/product/class/{{medicine[1]}}">Indian</a>
+                                </div>
+                            </div>
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/british.avif" alt="british.avif"
+                                    style="width:100%; height:130px;">
+
+                                <div class="card-body text-center mt-1">
+                                    <a routerLink="/show/product/class/{{medicine[2]}}">British</a>
+                                </div>
+                            </div>
+
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/mexicon.avif" alt="mexicon.avif"
+                                    style="width:100%; height:130px;">
+
+                                <div class="card-body text-center mt-1">
+                                    <a routerLink="/show/product/class/{{medicine[3]}}">Mexicon</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card-deck col-11 mx-auto">
+
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/chinese.avif" alt="chinese.avif"
+                                    style="width:100%; height:130px;">
+
+                                <div class="card-body text-center mt-1">
+                                    <a routerLink="/show/product/class/{{medicine[4]}}">Chinese</a>
+                                </div>
+                            </div>
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/italian.avif" alt="italian.avif"
+                                    style="width:100%; height:130px;">
+
+                                <div class="card-body text-center mt-1">
+                                    <a routerLink="/show/product/class/{{medicine[5]}}">Italian</a>
+                                </div>
+                            </div>
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/spanish.avif" alt="ai.png"
+                                    style="width:100%; height:130px;">
+
+                                <div class="card-body text-center mt-1">
+                                    <a routerLink="/show/product/class/{{medicine[6]}}">Spanish</a>
+                                </div>
+                            </div>
+                            <div class="card bg-light">
+                                <img class="card-img-top" src="assets/Images/polish.avif" alt="polish.avif"
+                                    style="width:100%; height:130px;">
+
+                                <div class="card-body text-center mt-1">
+                                    <a routerLink="/show/product/class/{{medicine[7]}}"> Polish</a>
+                                </div>
+                            </div>
+
+
+                            
+
+                            
+
+                         
+
+                        </div>
+
+                    </div>
+
+                    <a class="carousel-control-prev" href="#product" data-slide="prev">
+                        <span class="carousel-control-prev-icon" ></span>
+                    </a>
+
+
+                    <a class="carousel-control-next" href="#product" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
